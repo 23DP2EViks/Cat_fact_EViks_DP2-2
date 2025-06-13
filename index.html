@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cat Paradise</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="overlay"></div>
+  <header>
+    <div class="logo">🐾 CatParadise</div>
+    <nav>
+      <ul id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#clicker">Clicker</a></li>
+        <li><a href="#fact">Cat Fact</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="burger" id="burger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Cat Paradise</h1>
+        <p>Discover fun facts and enjoy the magic of cats!</p>
+      </div>
+    </section>
+
+    
+    <section id="clicker" class="section">
+      <h2>Cat Clicker</h2>
+      <p>Test your reflexes and see how many times you can click the button! Cats love attention - let's give them some!</p>
+      <button onclick="incrementCounter()">Click Me!</button>
+      <p>Clicks: <span id="counter">0</span></p>
+    </section>
+
+    <section id="fact" class="section">
+      <h2>Cat Fact</h2>
+      <p>Click the button below to learn something new about our feline friends!</p>
+      <button onclick="getCatFact()">Show a Cat Fact</button>
+      <p id="catFact"></p>
+      <img id="catImage" src="" alt="Random cat" style="max-width: 300px; display: none; margin-top: 1rem; border-radius: 12px;" />
+    </section>
+
+
+    <section id="contact" class="section contact">
+      <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+      <p>Email us at: <a href="mailto:info@catparadise.com">info@catparadise.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 CatParadise. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
